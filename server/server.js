@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from './config/db.js';
+import productRoutes from './routes/productRoutes.js';
 
 // Load environment variables
 dotenv.config();
@@ -14,7 +15,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // Vite default port
+  origin: 'http://localhost:5173',
   credentials: true
 }));
 app.use(express.json());
@@ -22,8 +23,11 @@ app.use(express.urlencoded({ extended: true }));
 
 // Test route
 app.get('/', (req, res) => {
-  res.json({ message: 'Vibe Commerce API Running' });
+  res.json({ message: 'ECommerce API Running' });
 });
+
+// Routes
+app.use('/api/products', productRoutes);
 
 // Start server
 const PORT = process.env.PORT || 5000;
