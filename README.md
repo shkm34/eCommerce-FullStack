@@ -86,63 +86,63 @@ This project implements a complete e-commerce shopping cart system with product 
 ---
 
 ## 📁 Project Structure
+```text
 Commerce-Cart/
-├── client/ # Frontend React application
-│ ├── src/
-│ │ ├── components/ # Reusable UI components
-│ │ │ ├── Header.jsx
-│ │ │ ├── ProductCard.jsx
-│ │ │ ├── ProductSkeleton.jsx
-│ │ │ ├── CartItem.jsx
-│ │ │ ├── OrderCard.jsx
-│ │ │ └── ReceiptModal.jsx
-│ │ ├── pages/ # Page components
-│ │ │ ├── ProductsPage.jsx
-│ │ │ ├── CartPage.jsx
-│ │ │ ├── CheckoutPage.jsx
-│ │ │ ├── OrdersPage.jsx
-│ │ │ └── OrderDetailsPage.jsx
-│ │ ├── services/ # API service layer
-│ │ │ ├── productService.js
-│ │ │ ├── cartService.js
-│ │ │ └── checkoutService.js
-│ │ ├── context/ # React Context
-│ │ │ └── CartContext.jsx
-│ │ ├── config/ # Configuration
-│ │ │ └── api.js
-│ │ ├── App.jsx
-│ │ ├── main.jsx
-│ │ └── index.css
-│ ├── .env
-│ ├── package.json
-│ ├── vite.config.js
-│ └── tailwind.config.js
+├── client/                     # Frontend React application
+│   ├── src/
+│   │   ├── components/         # Reusable UI components
+│   │   │   ├── Header.jsx
+│   │   │   ├── ProductCard.jsx
+│   │   │   ├── ProductSkeleton.jsx
+│   │   │   ├── CartItem.jsx
+│   │   │   ├── OrderCard.jsx
+│   │   │   └── ReceiptModal.jsx
+│   │   ├── pages/              # Page components
+│   │   │   ├── ProductsPage.jsx
+│   │   │   ├── CartPage.jsx
+│   │   │   ├── CheckoutPage.jsx
+│   │   │   ├── OrdersPage.jsx
+│   │   │   └── OrderDetailsPage.jsx
+│   │   ├── services/           # API service layer
+│   │   │   ├── productService.js
+│   │   │   ├── cartService.js
+│   │   │   └── checkoutService.js
+│   │   ├── context/            # React Context
+│   │   │   └── CartContext.jsx
+│   │   ├── config/             # Configuration
+│   │   │   └── api.js
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   ├── .env
+│   ├── package.json
+│   ├── vite.config.js
+│   └── tailwind.config.js
 │
-├── server/ # Backend Node.js/Express application
-│ ├── config/ # Configuration files
-│ │ ├── db.js
-│ │ └── seed.js
-│ ├── models/ # Mongoose schemas
-│ │ ├── Product.js
-│ │ ├── Cart.js
-│ │ └── Order.js
-│ ├── controllers/ # Route controllers
-│ │ ├── productController.js
-│ │ ├── cartController.js
-│ │ └── checkoutController.js
-│ ├── routes/ # API routes
-│ │ ├── productRoutes.js
-│ │ ├── cartRoutes.js
-│ │ └── checkoutRoutes.js
-│ ├── middleware/ # Custom middleware
-│ │ └── errorHandler.js
-│ ├── .env
-│ ├── package.json
-│ └── server.js
+├── server/                     # Backend Node.js/Express application
+│   ├── config/                 # Configuration files
+│   │   ├── db.js
+│   │   └── seed.js
+│   ├── models/                 # Mongoose schemas
+│   │   ├── Product.js
+│   │   ├── Cart.js
+│   │   └── Order.js
+│   ├── controllers/            # Route controllers
+│   │   ├── productController.js
+│   │   ├── cartController.js
+│   │   └── checkoutController.js
+│   ├── routes/                 # API routes
+│   │   ├── productRoutes.js
+│   │   ├── cartRoutes.js
+│   │   └── checkoutRoutes.js
+│   ├── middleware/             # Custom middleware
+│   │   └── errorHandler.js
+│   ├── .env
+│   ├── package.json
+│   └── server.js
 │
 ├── README.md
 └── .gitignore
-
 
 ---
 
