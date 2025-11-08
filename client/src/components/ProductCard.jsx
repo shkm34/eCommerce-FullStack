@@ -4,10 +4,10 @@ import { useCart } from '../context/CartContext';
 function ProductCard({ product }) {
   const { addToCart, loading } = useCart();
   const [isAdding, setIsAdding] = useState(false);
-
   const handleAddToCart = async () => {
     try {
       setIsAdding(true);
+      console.log('Adding to cart:', product._id);
       await addToCart(product._id, 1);
     } catch (error) {
       console.error('Failed to add to cart:', error);

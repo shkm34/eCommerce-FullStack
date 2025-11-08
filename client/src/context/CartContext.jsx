@@ -24,6 +24,11 @@ export const CartProvider = ({ children }) => {
 
   // update cart count when cart changes
   useEffect(() => {
+    console.log('Cart updated:', cart);
+    if (!cart || !cart.items) {
+      setCartCount(0);
+      return;
+    }
     const count = cart.items?.reduce((total, item) => total + item.quantity, 0) || 0;
     setCartCount(count);
   }, [cart]);
@@ -33,7 +38,7 @@ export const CartProvider = ({ children }) => {
     try {
       setLoading(true);
       const response = await cartService.getCart();
-      setCart(response.data || { items: [], subTotal: 0 });
+      setCart(response || { items: [], subTotal: 0 });
     } catch (error) {
       console.error('Error fetching cart:', error);
       toast.error('Failed to load cart');
@@ -44,10 +49,12 @@ export const CartProvider = ({ children }) => {
 
   // Add item to cart
   const addToCart = async (productId, quantity = 1) => {
+    console.log('addToCart called from CartProvider:', productId, quantity);
     try {
       setLoading(true);
       const response = await cartService.addToCart(productId, quantity);
-      setCart(response.data);
+      console.log('Response from addToCart:', response);
+      setCart(response);
       toast.success('Item added to cart!');
       return response;
     } catch (error) {
@@ -64,7 +71,7 @@ export const CartProvider = ({ children }) => {
     try {
       setLoading(true);
       const response = await cartService.updateCartItem(itemId, quantity);
-      setCart(response.data);
+      setCart(response);
       toast.success('Cart updated!');
       return response;
     } catch (error) {
@@ -81,7 +88,7 @@ export const CartProvider = ({ children }) => {
     try {
       setLoading(true);
       const response = await cartService.removeFromCart(itemId);
-      setCart(response.data);
+      setCart(response);
       toast.success('Item removed from cart');
       return response;
     } catch (error) {
@@ -98,7 +105,7 @@ export const CartProvider = ({ children }) => {
     try {
       setLoading(true);
       const response = await cartService.clearCart();
-      setCart(response.data);
+      setCart(response);
       toast.success('Cart cleared!');
       return response;
     } catch (error) {
