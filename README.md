@@ -261,27 +261,32 @@ curl -X POST http://localhost:5000/api/cart
 ## 📸 Screenshots
 
 ### Products Page
-![Products Grid](https://via.placeholder.com/1200x600/FFFFFF/4F46E5?text=Products+Grid+Screenshot)
+<img width="1886" height="954" alt="Screenshot 2025-11-08 220136" src="https://github.com/user-attachments/assets/72145495-ce0d-4530-8113-2c100444d36b" />
 *Responsive product grid with add to cart functionality*
 
 ### Shopping Cart
-![Shopping Cart](https://via.placeholder.com/1200x600/FFFFFF/4F46E5?text=Shopping+Cart+Screenshot)
+<img width="1880" height="961" alt="Screenshot 2025-11-08 220154" src="https://github.com/user-attachments/assets/fc4fad57-6b2b-4cbd-b4a0-849fcb61ca89" />
 *Cart management with quantity controls and order summary*
 
 ### Checkout Form
-![Checkout](https://via.placeholder.com/1200x600/FFFFFF/4F46E5?text=Checkout+Form+Screenshot)
+<img width="1883" height="956" alt="Screenshot 2025-11-08 220235" src="https://github.com/user-attachments/assets/5fa98e4b-76ba-4f3c-a33a-12b400d29030" />
 *Customer information form with validation*
 
 ### Receipt Modal
-![Receipt](https://via.placeholder.com/1200x600/FFFFFF/4F46E5?text=Receipt+Modal+Screenshot)
+<img width="1878" height="954" alt="Screenshot 2025-11-08 220328" src="https://github.com/user-attachments/assets/2acb16ec-f6b2-4ef6-86c0-f19152177e11" />
+
 *Order confirmation with complete details*
 
 ### Order History
-![Orders](https://via.placeholder.com/1200x600/FFFFFF/4F46E5?text=Order+History+Screenshot)
+<img width="1878" height="954" alt="Screenshot 2025-11-08 220328" src="https://github.com/user-attachments/assets/af9aa7d2-3d55-42e2-8f32-ac5f6b0b1d93" />
+
 *View past orders with expandable details*
 
 ### Mobile View
-![Mobile Responsive](https://via.placeholder.com/400x800/FFFFFF/4F46E5?text=Mobile+Responsive+Screenshot)
+<img width="470" height="839" alt="Screenshot 2025-11-08 220100" src="https://github.com/user-attachments/assets/59ee9fc9-ccd0-4173-88ea-1b98d652acd8" />
+<img width="477" height="854" alt="Screenshot 2025-11-08 220018" src="https://github.com/user-attachments/assets/cda42eda-78cc-44c8-8084-cef6ab1dc90d" />
+<img width="475" height="836" alt="Screenshot 2025-11-08 220047" src="https://github.com/user-attachments/assets/c6f18920-898f-4481-9f75-dd609c0fa98d" />
+
 *Fully responsive design for mobile devices*
 
 ---
