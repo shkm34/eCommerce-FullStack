@@ -10,12 +10,12 @@ export const checkoutService = {
   // Get order by ID
   getOrderById: async (orderId) => {
     const response = await apiClient.get(`/checkout/${orderId}`);
-    return response.data;
+    return response;
   },
 
   // Get all orders
   getAllOrders: async () => {
     const response = await apiClient.get("/checkout");
-    return response.data;
+    return response;
   },
 };
