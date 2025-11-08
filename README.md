@@ -143,7 +143,7 @@ Commerce-Cart/
 │
 ├── README.md
 └── .gitignore
-
+```
 ---
 
 ## 🚀 Installation & Setup
